@@ -23,7 +23,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Adi-LT-NFA">
                             <rect key="frame" x="0.0" y="0.0" width="382" height="292"/>
                         </view>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mFv-lb-4If" userLabel="Swipable StackView">
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mFv-lb-4If" userLabel="Swipable StackView" customClass="SwipableStackView" customModule="Calculator" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="292" width="382" height="481"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZOB-dj-nPy">

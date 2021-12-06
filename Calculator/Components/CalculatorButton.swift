@@ -9,12 +9,10 @@ import UIKit
 
 @IBDesignable final class CalculatorButton: UIView {
   
-  @IBInspectable private var value: String = "" { didSet { configureText() }}
+  @IBInspectable var value: String = "" { didSet { configureText() }}
   @IBInspectable private var textColor: String = "" { didSet { configureTextColor() }}
   @IBInspectable private var color: String = "" { didSet { configureBackgroundColor() }}
   @IBInspectable private var isZero: Bool = false { didSet { configureLayout() }}
-  
-  private var animator: UIViewPropertyAnimator?
   
   // MARK: - Views
   
@@ -37,6 +35,43 @@ import UIKit
   override func layoutSubviews() {
     super.layoutSubviews()
     configureLayer()
+  }
+}
+
+// MARK: - Handle Events
+
+extension CalculatorButton {
+  private func handleSelect() {
+  }
+  
+  private func handleHighlight() {
+    backgroundColor = backgroundColor?.lighter()
+  }
+  
+  private func handleDehighlight() {
+    configureTextColor()
+    configureBackgroundColor()
+  }
+  
+  func select() {
+    UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.3,
+                                                   delay: 0,
+                                                   options: .curveEaseInOut,
+                                                   animations: handleSelect)
+  }
+  
+  func highlight() {
+    UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.1,
+                                                   delay: 0,
+                                                   options: .curveEaseInOut,
+                                                   animations: handleHighlight)
+  }
+  
+  func dehighlight() {
+    UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.4,
+                                                   delay: 0,
+                                                   options: .curveEaseInOut,
+                                                   animations: handleDehighlight)
   }
 }
 
