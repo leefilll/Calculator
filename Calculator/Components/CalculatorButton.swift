@@ -7,12 +7,14 @@
 
 import UIKit
 
-@IBDesignable final class CalculatorButton: UIButton {
+@IBDesignable final class CalculatorButton: UIView {
   
   @IBInspectable private var value: String = "" { didSet { configureText() }}
   @IBInspectable private var textColor: String = "" { didSet { configureTextColor() }}
   @IBInspectable private var color: String = "" { didSet { configureBackgroundColor() }}
   @IBInspectable private var isZero: Bool = false { didSet { configureLayout() }}
+  
+  private var animator: UIViewPropertyAnimator?
   
   // MARK: - Views
   

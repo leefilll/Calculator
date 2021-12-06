@@ -29,289 +29,276 @@
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZOB-dj-nPy">
                                     <rect key="frame" x="0.0" y="0.0" width="382" height="84"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zjq-r2-PhE" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1xr-Aa-kKG" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="84.5" height="84"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="zjq-r2-PhE" secondAttribute="height" multiplier="1:1" id="pDS-d1-XY8"/>
+                                                <constraint firstAttribute="width" secondItem="1xr-Aa-kKG" secondAttribute="height" multiplier="1:1" id="JLl-Mj-vgU"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="grey"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="AC"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="black"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="grey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                             </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQr-kv-YPF" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rss-xP-Jlj" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
                                             <rect key="frame" x="99.5" y="0.0" width="84" height="84"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="rss-xP-Jlj" secondAttribute="height" multiplier="1:1" id="sjj-in-enG"/>
+                                            </constraints>
                                             <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="black"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="color" value="grey"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="⁺∕₋"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="black"/>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                             </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WA1-FR-KrC" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O6h-bd-5Fq" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
                                             <rect key="frame" x="198.5" y="0.0" width="84.5" height="84"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="O6h-bd-5Fq" secondAttribute="height" multiplier="1:1" id="QhS-tQ-SBk"/>
+                                            </constraints>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="grey"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="%"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="black"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="grey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="﹪"/>
                                             </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCc-3P-Xso" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0b4-2Z-eex" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
                                             <rect key="frame" x="298" y="0.0" width="84" height="84"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="SCc-3P-Xso" secondAttribute="height" multiplier="1:1" id="ZkX-kH-o0n"/>
+                                                <constraint firstAttribute="width" secondItem="0b4-2Z-eex" secondAttribute="height" multiplier="1:1" id="MBp-3p-Vjn"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" title=""/>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="orange"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="÷"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="orange"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="÷"/>
                                             </userDefinedRuntimeAttributes>
-                                        </button>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="WA1-FR-KrC" firstAttribute="width" secondItem="WA1-FR-KrC" secondAttribute="height" multiplier="1:1" id="EXN-8N-nL0"/>
-                                        <constraint firstItem="aQr-kv-YPF" firstAttribute="width" secondItem="aQr-kv-YPF" secondAttribute="height" multiplier="1:1" id="HDa-Lq-YIN"/>
+                                        <constraint firstItem="rss-xP-Jlj" firstAttribute="width" secondItem="rss-xP-Jlj" secondAttribute="height" multiplier="1:1" id="2ca-EU-gdg"/>
+                                        <constraint firstItem="0b4-2Z-eex" firstAttribute="width" secondItem="0b4-2Z-eex" secondAttribute="height" multiplier="1:1" id="h9w-FH-ODt"/>
+                                        <constraint firstItem="O6h-bd-5Fq" firstAttribute="width" secondItem="O6h-bd-5Fq" secondAttribute="height" multiplier="1:1" id="hOd-6N-X00"/>
                                     </constraints>
                                 </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hR9-ex-B7H">
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ZL6-uk-842">
                                     <rect key="frame" x="0.0" y="99" width="382" height="84.5"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N3e-qU-G6J" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5u-Vq-wGi" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="84.5" height="84.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="N3e-qU-G6J" secondAttribute="height" multiplier="1:1" id="Azp-kB-yMW"/>
+                                                <constraint firstAttribute="width" secondItem="D5u-Vq-wGi" secondAttribute="height" multiplier="1:1" id="dNc-lm-scN"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" title=""/>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="7"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                             </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXj-iF-NEW" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S09-gq-RLl" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
                                             <rect key="frame" x="99.5" y="0.0" width="84" height="84.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="QXj-iF-NEW" secondAttribute="height" multiplier="1:1" id="Cgx-c6-0Va"/>
+                                                <constraint firstAttribute="width" secondItem="S09-gq-RLl" secondAttribute="height" multiplier="1:1" id="nhd-bn-zAO"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="8"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="8"/>
                                             </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlR-ei-g94" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9X-sa-vLE" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
                                             <rect key="frame" x="198.5" y="0.0" width="84.5" height="84.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="RlR-ei-g94" secondAttribute="height" multiplier="1:1" id="Y4Q-vl-Adc"/>
+                                                <constraint firstAttribute="width" secondItem="B9X-sa-vLE" secondAttribute="height" multiplier="1:1" id="MF2-on-UEi"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
                                             <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="9"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                             </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipX-wQ-Kp7" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIz-Fz-67a" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
                                             <rect key="frame" x="298" y="0.0" width="84" height="84.5"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="HIz-Fz-67a" secondAttribute="height" multiplier="1:1" id="v3Z-T0-EyG"/>
+                                            </constraints>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="orange"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="ｘ"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="orange"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="x"/>
                                             </userDefinedRuntimeAttributes>
-                                        </button>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="RlR-ei-g94" firstAttribute="width" secondItem="RlR-ei-g94" secondAttribute="height" multiplier="1:1" id="89g-3f-Imu"/>
-                                        <constraint firstItem="ipX-wQ-Kp7" firstAttribute="width" secondItem="ipX-wQ-Kp7" secondAttribute="height" multiplier="1:1" id="VvL-SA-PPl"/>
+                                        <constraint firstItem="S09-gq-RLl" firstAttribute="width" secondItem="S09-gq-RLl" secondAttribute="height" multiplier="1:1" id="8Iu-sm-4Np"/>
+                                        <constraint firstItem="HIz-Fz-67a" firstAttribute="width" secondItem="HIz-Fz-67a" secondAttribute="height" multiplier="1:1" id="IBJ-BF-GED"/>
+                                        <constraint firstItem="B9X-sa-vLE" firstAttribute="width" secondItem="B9X-sa-vLE" secondAttribute="height" multiplier="1:1" id="PBW-Tk-4mk"/>
                                     </constraints>
                                 </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XDH-6H-TXh">
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="oOH-q4-idD">
                                     <rect key="frame" x="0.0" y="198.5" width="382" height="84"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trO-ny-Hmt" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUy-YE-dhQ" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="84.5" height="84"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="trO-ny-Hmt" secondAttribute="height" multiplier="1:1" id="zkh-Wp-NPb"/>
+                                                <constraint firstAttribute="width" secondItem="AUy-YE-dhQ" secondAttribute="height" multiplier="1:1" id="qYx-RD-azn"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" title=""/>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="4"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                             </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqh-ig-x0M" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMR-g5-wcU" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
                                             <rect key="frame" x="99.5" y="0.0" width="84" height="84"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="rqh-ig-x0M" secondAttribute="height" multiplier="1:1" id="ZcP-Uv-sX4"/>
+                                                <constraint firstAttribute="width" secondItem="hMR-g5-wcU" secondAttribute="height" multiplier="1:1" id="jaQ-B0-BLB"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="5"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="5"/>
                                             </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7LS-Nz-oB4" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Yj-Md-Ehr" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
                                             <rect key="frame" x="198.5" y="0.0" width="84.5" height="84"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="7LS-Nz-oB4" secondAttribute="height" multiplier="1:1" id="8aB-BZ-O5D"/>
+                                                <constraint firstAttribute="width" secondItem="2Yj-Md-Ehr" secondAttribute="height" multiplier="1:1" id="L3M-Ew-HZG"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="6"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="6"/>
                                             </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIb-WF-gwU" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0r-Se-kbr" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
                                             <rect key="frame" x="298" y="0.0" width="84" height="84"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="sIb-WF-gwU" secondAttribute="height" multiplier="1:1" id="ghj-DK-0RV"/>
+                                                <constraint firstAttribute="width" secondItem="G0r-Se-kbr" secondAttribute="height" multiplier="1:1" id="3xe-ju-ci9"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
                                             <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="color" value="orange"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="﹣"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                             </userDefinedRuntimeAttributes>
-                                        </button>
-                                    </subviews>
-                                </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fpb-h1-Gpa">
-                                    <rect key="frame" x="0.0" y="297.5" width="382" height="84.5"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7L3-TD-ujt" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="84.5" height="84.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="7L3-TD-ujt" secondAttribute="height" multiplier="1:1" id="Z1r-0O-IOf"/>
-                                            </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="1"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
-                                            </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoe-c9-iUT" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
-                                            <rect key="frame" x="99.5" y="0.0" width="84" height="84.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="yoe-c9-iUT" secondAttribute="height" multiplier="1:1" id="Y6M-tT-BVk"/>
-                                            </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="2"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
-                                            </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2l-fb-0zH" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
-                                            <rect key="frame" x="198.5" y="0.0" width="84.5" height="84.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" secondItem="C2l-fb-0zH" secondAttribute="height" multiplier="1:1" id="Uyv-Xe-xRj"/>
-                                            </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="3"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
-                                            </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIp-DV-RHK" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
-                                            <rect key="frame" x="298" y="0.0" width="84" height="84.5"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="orange"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="+"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
-                                            </userDefinedRuntimeAttributes>
-                                        </button>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="KIp-DV-RHK" firstAttribute="width" secondItem="KIp-DV-RHK" secondAttribute="height" multiplier="1:1" id="AVr-A0-8Xm"/>
+                                        <constraint firstItem="G0r-Se-kbr" firstAttribute="width" secondItem="G0r-Se-kbr" secondAttribute="height" multiplier="1:1" id="kSU-bf-Fbi"/>
+                                        <constraint firstItem="2Yj-Md-Ehr" firstAttribute="width" secondItem="2Yj-Md-Ehr" secondAttribute="height" multiplier="1:1" id="n3R-ML-BGj"/>
+                                        <constraint firstItem="hMR-g5-wcU" firstAttribute="width" secondItem="hMR-g5-wcU" secondAttribute="height" multiplier="1:1" id="qlC-C9-opr"/>
                                     </constraints>
                                 </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="U6a-KQ-3VQ">
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="dQG-Nd-3Wh">
+                                    <rect key="frame" x="0.0" y="297.5" width="382" height="84.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLL-t1-mIO" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="84.5" height="84.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="iLL-t1-mIO" secondAttribute="height" multiplier="1:1" id="7ae-Du-pfq"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="1"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dqo-fC-DGf" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                            <rect key="frame" x="99.5" y="0.0" width="84" height="84.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Dqo-fC-DGf" secondAttribute="height" multiplier="1:1" id="YA3-F6-Pqp"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="2"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kh2-Y2-5yO" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                            <rect key="frame" x="198.5" y="0.0" width="84.5" height="84.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Kh2-Y2-5yO" secondAttribute="height" multiplier="1:1" id="CZ9-rD-A97"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="3"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sgv-FU-8Vt" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                            <rect key="frame" x="298" y="0.0" width="84" height="84.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Sgv-FU-8Vt" secondAttribute="height" multiplier="1:1" id="oHa-9O-QgV"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="orange"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="+"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Dqo-fC-DGf" firstAttribute="width" secondItem="Dqo-fC-DGf" secondAttribute="height" multiplier="1:1" id="LP1-xe-fYq"/>
+                                        <constraint firstItem="Kh2-Y2-5yO" firstAttribute="width" secondItem="Kh2-Y2-5yO" secondAttribute="height" multiplier="1:1" id="kqM-JG-q2w"/>
+                                        <constraint firstItem="Sgv-FU-8Vt" firstAttribute="width" secondItem="Sgv-FU-8Vt" secondAttribute="height" multiplier="1:1" id="y9g-bG-i6O"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qmX-2Y-HWX">
                                     <rect key="frame" x="0.0" y="397" width="382" height="84"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jvk-ix-dEl" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cB2-9o-w7j" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="183.5" height="84"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="0"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="YES"/>
                                             </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmI-xt-L75" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2L9-53-55n" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
                                             <rect key="frame" x="198.5" y="0.0" width="84.5" height="84"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="vmI-xt-L75" secondAttribute="height" multiplier="1:1" id="r31-gM-BgN"/>
+                                                <constraint firstAttribute="width" secondItem="2L9-53-55n" secondAttribute="height" multiplier="1:1" id="avd-9F-DWG"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="."/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="."/>
                                             </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZ6-J3-WxA" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9o5-dm-D25" customClass="CalculatorButton" customModule="Calculator" customModuleProvider="target">
                                             <rect key="frame" x="298" y="0.0" width="84" height="84"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="hZ6-J3-WxA" secondAttribute="height" multiplier="1:1" id="9qM-q1-CeK"/>
+                                                <constraint firstAttribute="width" secondItem="9o5-dm-D25" secondAttribute="height" multiplier="1:1" id="OC0-jn-KKa"/>
                                             </constraints>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain"/>
                                             <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="orange"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="="/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="orange"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="value" value="="/>
                                             </userDefinedRuntimeAttributes>
-                                        </button>
+                                        </view>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="9o5-dm-D25" firstAttribute="width" secondItem="9o5-dm-D25" secondAttribute="height" multiplier="1:1" id="BLL-v8-LwL"/>
+                                        <constraint firstItem="2L9-53-55n" firstAttribute="width" secondItem="2L9-53-55n" secondAttribute="height" multiplier="1:1" id="FYV-Z1-lAh"/>
+                                    </constraints>
                                 </stackView>
                             </subviews>
                         </stackView>
@@ -329,63 +316,4 @@
             <point key="canvasLocation" x="139" y="154"/>
         </view>
     </objects>
-    <designables>
-        <designable name="7L3-TD-ujt">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="7LS-Nz-oB4">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="C2l-fb-0zH">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="Jvk-ix-dEl">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="KIp-DV-RHK">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="N3e-qU-G6J">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="QXj-iF-NEW">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="RlR-ei-g94">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="SCc-3P-Xso">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="WA1-FR-KrC">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="aQr-kv-YPF">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="hZ6-J3-WxA">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="ipX-wQ-Kp7">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="rqh-ig-x0M">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="sIb-WF-gwU">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="trO-ny-Hmt">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="vmI-xt-L75">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="yoe-c9-iUT">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-        <designable name="zjq-r2-PhE">
-            <size key="intrinsicContentSize" width="24" height="14"/>
-        </designable>
-    </designables>
 </document>
