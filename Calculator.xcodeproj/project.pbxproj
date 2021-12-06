@@ -18,6 +18,11 @@
 		1534C3F5275E4B9600356F00 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1534C3F3275E4B8B00356F00 /* Domain.framework */; };
 		1534C3F6275E4B9600356F00 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1534C3F3275E4B8B00356F00 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1534C3FD275E4C6800356F00 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1534C3FC275E4C6800356F00 /* ViewController.xib */; };
+		1534C400275E65EA00356F00 /* CalculatorButton.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534C3FF275E65EA00356F00 /* CalculatorButton.swift.swift */; };
+		1534C402275E660E00356F00 /* SwipableStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534C401275E660E00356F00 /* SwipableStackView.swift */; };
+		1534C405275E678C00356F00 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534C404275E678C00356F00 /* UIColor+Hex.swift */; };
+		1534C409275E6D2B00356F00 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1534C3F3275E4B8B00356F00 /* Domain.framework */; };
+		1534C40B275E755000356F00 /* UIColor+Lighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534C40A275E755000356F00 /* UIColor+Lighter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +78,10 @@
 		1534C3EE275E4B8B00356F00 /* Domain.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Domain.xcodeproj; path = Domain/Domain.xcodeproj; sourceTree = "<group>"; };
 		1534C3F7275E4B9600356F00 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1534C3FC275E4C6800356F00 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		1534C3FF275E65EA00356F00 /* CalculatorButton.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorButton.swift.swift; sourceTree = "<group>"; };
+		1534C401275E660E00356F00 /* SwipableStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipableStackView.swift; sourceTree = "<group>"; };
+		1534C404275E678C00356F00 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		1534C40A275E755000356F00 /* UIColor+Lighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Lighter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1534C409275E6D2B00356F00 /* Domain.framework in Frameworks */,
 				1534C3F5275E4B9600356F00 /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +126,9 @@
 		1534C381275E46F900356F00 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				1534C3FE275E65DA00356F00 /* Components */,
+				1534C403275E676A00356F00 /* Extensions */,
+				1534C406275E690C00356F00 /* Utils */,
 				1534C382275E46F900356F00 /* AppDelegate.swift */,
 				1534C384275E46F900356F00 /* SceneDelegate.swift */,
 				1534C386275E46F900356F00 /* ViewController.swift */,
@@ -157,6 +170,31 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1534C3FE275E65DA00356F00 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1534C3FF275E65EA00356F00 /* CalculatorButton.swift.swift */,
+				1534C401275E660E00356F00 /* SwipableStackView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1534C403275E676A00356F00 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1534C404275E678C00356F00 /* UIColor+Hex.swift */,
+				1534C40A275E755000356F00 /* UIColor+Lighter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1534C406275E690C00356F00 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,8 +345,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1534C400275E65EA00356F00 /* CalculatorButton.swift.swift in Sources */,
 				1534C387275E46F900356F00 /* ViewController.swift in Sources */,
 				1534C383275E46F900356F00 /* AppDelegate.swift in Sources */,
+				1534C405275E678C00356F00 /* UIColor+Hex.swift in Sources */,
+				1534C402275E660E00356F00 /* SwipableStackView.swift in Sources */,
+				1534C40B275E755000356F00 /* UIColor+Lighter.swift in Sources */,
 				1534C385275E46F900356F00 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,7 +527,6 @@
 				INFOPLIST_FILE = Calculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -513,7 +554,6 @@
 				INFOPLIST_FILE = Calculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
