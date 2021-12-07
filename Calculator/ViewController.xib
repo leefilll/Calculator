@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="Calculator" customModuleProvider="target">
             <connections>
+                <outlet property="calculatorLabel" destination="ycU-D3-7Gw" id="iwA-4S-oTR"/>
+                <outlet property="swipableStackView" destination="mFv-lb-4If" id="PxD-Vz-fK8"/>
                 <outlet property="view" destination="iN0-l3-epB" id="avT-sO-OZ3"/>
             </connections>
         </placeholder>
@@ -22,6 +24,22 @@
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Adi-LT-NFA">
                             <rect key="frame" x="0.0" y="0.0" width="382" height="292"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycU-D3-7Gw" customClass="CalculatorLabel" customModule="Calculator" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="251.5" width="366" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="value" value="0"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="ycU-D3-7Gw" firstAttribute="leading" secondItem="Adi-LT-NFA" secondAttribute="leading" constant="8" id="he3-BK-HW7"/>
+                                <constraint firstAttribute="trailing" secondItem="ycU-D3-7Gw" secondAttribute="trailing" constant="8" id="uPU-ix-mk1"/>
+                                <constraint firstAttribute="bottom" secondItem="ycU-D3-7Gw" secondAttribute="bottom" constant="20" id="zKe-Hg-b3A"/>
+                            </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mFv-lb-4If" userLabel="Swipable StackView" customClass="SwipableStackView" customModule="Calculator" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="292" width="382" height="481"/>
@@ -95,7 +113,7 @@
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="7"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="mediumGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                             </userDefinedRuntimeAttributes>
                                         </view>
@@ -106,7 +124,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="mediumGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="8"/>
                                             </userDefinedRuntimeAttributes>
@@ -118,7 +136,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="mediumGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="9"/>
                                             </userDefinedRuntimeAttributes>
@@ -153,7 +171,7 @@
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="4"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="mediumGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                             </userDefinedRuntimeAttributes>
                                         </view>
@@ -164,7 +182,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="mediumGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="5"/>
                                             </userDefinedRuntimeAttributes>
@@ -176,7 +194,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="mediumGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="6"/>
                                             </userDefinedRuntimeAttributes>
@@ -211,7 +229,7 @@
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="1"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="mediumGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                             </userDefinedRuntimeAttributes>
                                         </view>
@@ -222,7 +240,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="mediumGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="2"/>
                                             </userDefinedRuntimeAttributes>
@@ -234,7 +252,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="mediumGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="3"/>
                                             </userDefinedRuntimeAttributes>
@@ -266,7 +284,7 @@
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="0"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="mediumGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="YES"/>
                                             </userDefinedRuntimeAttributes>
                                         </view>
@@ -277,7 +295,7 @@
                                             </constraints>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="textColor" value="white"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="darkGrey"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="color" value="mediumGrey"/>
                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isZero" value="NO"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="value" value="."/>
                                             </userDefinedRuntimeAttributes>
@@ -316,4 +334,9 @@
             <point key="canvasLocation" x="139" y="154"/>
         </view>
     </objects>
+    <designables>
+        <designable name="ycU-D3-7Gw">
+            <size key="intrinsicContentSize" width="10.5" height="20.5"/>
+        </designable>
+    </designables>
 </document>

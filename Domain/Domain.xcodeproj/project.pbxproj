@@ -11,6 +11,12 @@
 		1534C31B275E420100356F00 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534C31A275E420100356F00 /* History.swift */; };
 		1534C31D275E421300356F00 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534C31C275E421300356F00 /* UseCaseProvider.swift */; };
 		1534C31F275E423200356F00 /* HistoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534C31E275E423200356F00 /* HistoryUseCase.swift */; };
+		1534C415275F8D3D00356F00 /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534C414275F8D3D00356F00 /* Operator.swift */; };
+		1534C419275F8D6100356F00 /* OperatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534C418275F8D6100356F00 /* OperatorType.swift */; };
+		1534C421275FA5F500356F00 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534C420275FA5F500356F00 /* Token.swift */; };
+		1534C424275FA73600356F00 /* TokenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534C423275FA73600356F00 /* TokenFactory.swift */; };
+		1534C42A275FA7C200356F00 /* TokenType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534C429275FA7C200356F00 /* TokenType.swift */; };
+		1534C42C275FB2EC00356F00 /* Operand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534C42B275FB2EC00356F00 /* Operand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		1534C31A275E420100356F00 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		1534C31C275E421300356F00 /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
 		1534C31E275E423200356F00 /* HistoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryUseCase.swift; sourceTree = "<group>"; };
+		1534C414275F8D3D00356F00 /* Operator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
+		1534C418275F8D6100356F00 /* OperatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorType.swift; sourceTree = "<group>"; };
+		1534C420275FA5F500356F00 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		1534C423275FA73600356F00 /* TokenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenFactory.swift; sourceTree = "<group>"; };
+		1534C429275FA7C200356F00 /* TokenType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenType.swift; sourceTree = "<group>"; };
+		1534C42B275FB2EC00356F00 /* Operand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,10 @@
 		1534C310275E41E200356F00 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				1534C422275FA72A00356F00 /* Factory */,
 				1534C319275E41F200356F00 /* UseCases */,
 				1534C318275E41EE00356F00 /* Entries */,
+				1534C416275F8D4F00356F00 /* Types */,
 				1534C311275E41E200356F00 /* Domain.h */,
 			);
 			path = Domain;
@@ -62,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				1534C31A275E420100356F00 /* History.swift */,
+				1534C414275F8D3D00356F00 /* Operator.swift */,
+				1534C42B275FB2EC00356F00 /* Operand.swift */,
 			);
 			path = Entries;
 			sourceTree = "<group>";
@@ -73,6 +89,24 @@
 				1534C31E275E423200356F00 /* HistoryUseCase.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		1534C416275F8D4F00356F00 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				1534C420275FA5F500356F00 /* Token.swift */,
+				1534C429275FA7C200356F00 /* TokenType.swift */,
+				1534C418275F8D6100356F00 /* OperatorType.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		1534C422275FA72A00356F00 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				1534C423275FA73600356F00 /* TokenFactory.swift */,
+			);
+			path = Factory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +190,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1534C31F275E423200356F00 /* HistoryUseCase.swift in Sources */,
+				1534C419275F8D6100356F00 /* OperatorType.swift in Sources */,
+				1534C421275FA5F500356F00 /* Token.swift in Sources */,
+				1534C42C275FB2EC00356F00 /* Operand.swift in Sources */,
+				1534C424275FA73600356F00 /* TokenFactory.swift in Sources */,
 				1534C31D275E421300356F00 /* UseCaseProvider.swift in Sources */,
+				1534C415275F8D3D00356F00 /* Operator.swift in Sources */,
 				1534C31B275E420100356F00 /* History.swift in Sources */,
+				1534C42A275FA7C200356F00 /* TokenType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -74,11 +74,11 @@ extension CalculatorButton {
   }
   
   func highlight() {
-    startAnimation(duration: 0.1, animations: handleHighlight)
+    startAnimation(duration: 0.05, animations: handleHighlight)
   }
   
   func dehighlight() {
-    startAnimation(duration: 0.6, animations: handleDehighlight)
+    startAnimation(duration: 0.7, animations: handleDehighlight)
   }
   
   func startAnimation(duration: TimeInterval, curve: UIView.AnimationCurve = .easeInOut, animations: (() -> Void

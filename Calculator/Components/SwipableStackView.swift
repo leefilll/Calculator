@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol SwipableStackViewDelegate: AnyObject {
+  func stackView(_ stackView: SwipableStackView, didSelectValue value: String)
+}
+
 final class SwipableStackView: UIStackView {
+  
+  public weak var delegate: SwipableStackViewDelegate?
   
   private var latestHighligtedButton: CalculatorButton?
   private var latestSelectedButton: CalculatorButton?
@@ -43,12 +49,8 @@ final class SwipableStackView: UIStackView {
   
   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     guard let calculatorButton = calculatorButton(in: touches, with: event) else { return }
+    delegate?.stackView(self, didSelectValue: calculatorButton.value)
     calculatorButton.dehighlight()
-    
-    if calculatorButton.isUtil == false {
-      latestSelectedButton?.dehighlight()
-    }
-    
     latestSelectedButton = calculatorButton
     guard latestSelectedButton?.isSelectable == true else { return }
     latestSelectedButton?.select()
