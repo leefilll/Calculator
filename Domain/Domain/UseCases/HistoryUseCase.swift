@@ -9,4 +9,5 @@ import Foundation
 
 public protocol HistoryUseCase {
   func history() -> History
+  func histories() -> [History]
 }

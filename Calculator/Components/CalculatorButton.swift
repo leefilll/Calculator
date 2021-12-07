@@ -14,6 +14,15 @@ import UIKit
   @IBInspectable private var color: String = "" { didSet { configureBackgroundColor() }}
   @IBInspectable private var isZero: Bool = false { didSet { configureLayout() }}
   
+  public var isUtil: Bool {
+    return "AC⁺∕₋﹪".contains(value)
+  }
+  public var isSelectable: Bool {
+    return "÷x﹣+=".contains(value)
+  }
+  
+  private var animator: UIViewPropertyAnimator?
+  
   // MARK: - Views
   
   private let textLabel = UILabel()
@@ -42,6 +51,8 @@ import UIKit
 
 extension CalculatorButton {
   private func handleSelect() {
+    backgroundColor = UIColor.white
+    textLabel.textColor = UIColor.orange
   }
   
   private func handleHighlight() {
@@ -54,24 +65,26 @@ extension CalculatorButton {
   }
   
   func select() {
-    UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.3,
-                                                   delay: 0,
-                                                   options: .curveEaseInOut,
-                                                   animations: handleSelect)
+    guard isSelectable else { return }
+    startAnimation(duration: 0.4, animations: handleSelect)
+  }
+  
+  func deselect() {
+    startAnimation(duration: 0.3, animations: handleDehighlight)
   }
   
   func highlight() {
-    UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.1,
-                                                   delay: 0,
-                                                   options: .curveEaseInOut,
-                                                   animations: handleHighlight)
+    startAnimation(duration: 0.1, animations: handleHighlight)
   }
   
   func dehighlight() {
-    UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.4,
-                                                   delay: 0,
-                                                   options: .curveEaseInOut,
-                                                   animations: handleDehighlight)
+    startAnimation(duration: 0.6, animations: handleDehighlight)
+  }
+  
+  func startAnimation(duration: TimeInterval, curve: UIView.AnimationCurve = .easeInOut, animations: (() -> Void
+  )?) {
+    animator = UIViewPropertyAnimator(duration: duration, curve: curve, animations: animations)
+    animator?.startAnimation()
   }
 }
 

@@ -10,6 +10,7 @@ import UIKit
 final class SwipableStackView: UIStackView {
   
   private var latestHighligtedButton: CalculatorButton?
+  private var latestSelectedButton: CalculatorButton?
   
   // MARK: - Initializations
   
@@ -19,16 +20,6 @@ final class SwipableStackView: UIStackView {
   
   required init(coder: NSCoder) {
     super.init(coder: coder)
-  }
-  
-  override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
-    let view = super.hitTest(point, with: event)
-    
-    if view != nil {
-      return view
-    }
-    
-    return nil
   }
   
   // MARK: - Touch Events
@@ -53,7 +44,14 @@ final class SwipableStackView: UIStackView {
   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     guard let calculatorButton = calculatorButton(in: touches, with: event) else { return }
     calculatorButton.dehighlight()
-    latestHighligtedButton?.select()
+    
+    if calculatorButton.isUtil == false {
+      latestSelectedButton?.dehighlight()
+    }
+    
+    latestSelectedButton = calculatorButton
+    guard latestSelectedButton?.isSelectable == true else { return }
+    latestSelectedButton?.select()
   }
 }
 
